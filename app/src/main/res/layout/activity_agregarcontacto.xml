@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Agregarcontacto">
+
+    <EditText
+        android:id="@+id/editTextUsuario"
+        android:layout_width="353dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="Usuario:"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmail"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="359dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="Email:"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toTopOf="@+id/editTexttwitter"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <EditText
+        android:id="@+id/editTexttwitter"
+        android:layout_width="359dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="twittter:"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTel"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <EditText
+        android:id="@+id/editTextFechaNac"
+        android:layout_width="353dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="Fecha Nac:"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <EditText
+        android:id="@+id/editTextTel"
+        android:layout_width="361dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:hint="Tel:"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toTopOf="@+id/editTextFechaNac"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="160dp"
+        android:layout_height="69dp"
+        android:onClick="onClick"
+        android:text="Guardar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="235dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
