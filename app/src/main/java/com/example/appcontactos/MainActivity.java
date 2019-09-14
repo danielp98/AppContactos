@@ -24,8 +24,6 @@ public class MainActivity extends AppCompatActivity {
         listacontactos = new ArrayList<ObjetoContacto>();
     }
 
-
-
     public void ActividadAgregar (View view){
         Intent intent = new Intent(this, Agregarcontacto.class);
         startActivityForResult(intent, 1);
